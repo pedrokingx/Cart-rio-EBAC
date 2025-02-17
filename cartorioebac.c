@@ -127,9 +127,10 @@ int main () //funçao principal
    	
     printf("\tCartório da EBAC\n\n"); //inicio do menu
     printf("  Selecione a opção desejada:\n\n");
-    printf("1- Registrar nomes\n");
-    printf("2- Consultar nomes\n");
-    printf("3- Deletar nomes\n\n\n");
+    printf("1- Registrar nomes.\n");
+    printf("2- Consultar nomes.\n");
+    printf("3- Deletar nomes.\n\n");
+    printf("4- Fechar programa.\n\n\n");
 	printf("digite a opção: "); //fim do menu
 
     scanf("%d", &opcao); //armazenando a escolha do usuario
@@ -148,6 +149,11 @@ int main () //funçao principal
 	    	
 	case 3:
 	deletar();   	
+	break;
+	
+	case 4:
+	printf("Obrigado por utilizar nosso sistema!");
+	return 0; //instrução para fechar o programa
 	break;
 			
 	default:
